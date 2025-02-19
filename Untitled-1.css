@@ -1,0 +1,160 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header and Navigation */
+  header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
+  
+  nav .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ecf0f1;
+    text-transform: uppercase;
+  }
+  
+  nav .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav .nav-links li {
+    margin-left: 30px;
+  }
+  
+  nav .nav-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  nav .nav-links a:hover {
+    color: #3498db;
+  }
+  
+  nav .hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #ecf0f1;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    color: white;
+    border-bottom: 5px solid #ecf0f1;
+  }
+  
+  .hero h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  
+  /* Features Section */
+  .features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 50px 20px;
+    background: #fff;
+  }
+  
+  .feature {
+    background: #f9f9f9;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .feature h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .feature p {
+    font-size: 16px;
+    color: #7f8c8d;
+  }
+  
+  /* Footer */
+  footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+  }
+  
+  footer p {
+    margin-top: 10px;
+  }
+  
+  /* Media Queries for Mobile Devices */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .nav-links.active {
+      display: block;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .features {
+      grid-template-columns: 1fr;
+    }
+  
+    .hero h1 {
+      font-size: 32px;
+    }
+  
+    .hero p {
+      font-size: 18px;
+    }
+  }
+  

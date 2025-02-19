@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web Page</title>
+  <link rel="stylesheet" href="Untitled-1.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">MyWebsite</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        &#9776;
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Our Responsive Web Page</h1>
+    <p>This page is designed using CSS Flexbox and Grid for responsiveness.</p>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h2>Feature 1</h2>
+      <p>Responsive design is essential for modern web development.</p>
+    </div>
+    <div class="feature">
+      <h2>Feature 2</h2>
+      <p>CSS Grid allows for advanced layout designs that adapt to screen sizes.</p>
+    </div>
+    <div class="feature">
+      <h2>Feature 3</h2>
+      <p>Flexbox is perfect for aligning elements in a flexible container.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 MyWebsite. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
